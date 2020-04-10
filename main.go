@@ -3,7 +3,9 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"math"
+	"net/http"
 
 	"maki.io/demo/shaver/service"
 	"maki.io/demo/shaver/util"
@@ -15,6 +17,10 @@ func sqrt(x float64) float64 {
 		z -= (z*z - x) / (2 * z)
 	}
 	return z
+}
+
+func handler(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, "Hi there, this world loves %s", r.URL.Path[1:])
 }
 
 func main() {
@@ -38,5 +44,9 @@ func main() {
 			fmt.Println(string(p2.Body))
 		}
 	}
+
+	// basic-http
+	http.HandleFunc("/", handler)
+	log.Fatal(http.ListenAndServe(":8080", nil))
 
 }
