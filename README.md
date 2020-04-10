@@ -6,7 +6,7 @@
 有感于朱老师的面试题“设计一个短网址服务器”, 入职第一周要学习一门新语言golang来写一个demo项目。
 索性就写一个短网址服务器好了。项目命名为shaver，剃须刀推子的意思，正好在给家里的两只猫剃毛所以取名为猫推子。
 
-![猫咪的剃毛推子](./source/shaver.jpeg)
+![猫咪的剃毛推子](./resource/img/shaver.jpeg)
 
 ## 调研
 
@@ -24,13 +24,13 @@
 ## 使用场景体验
 
 - 写微博：微博正文内有网址信息
-![weibo的方案](./source/weibo-url-input.jpg)
+![weibo的方案](./resource/img/weibo-url-input.jpg)
 
 - 发表：长网址变成四个字的href网页链接, 正常的微博内容被正确的保留了。
-![weibo的方案](./source/weibo-url-show.jpg)
+![weibo的方案](./resource/img/weibo-url-show.jpg)
 
 - 查看渲染后html信息
-![weibo的方案](./source/weibo-url-elements.jpg)
+![weibo的方案](./resource/img/weibo-url-elements.jpg)
 
 - 点击网络链接：直接rediect
 
