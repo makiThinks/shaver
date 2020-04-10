@@ -1,8 +1,11 @@
+// bootstrap of this project
 package main
 
 import (
 	"fmt"
 	"math"
+
+	"maki.io/demo/shaver/util"
 )
 
 func sqrt(x float64) float64 {
@@ -14,6 +17,8 @@ func sqrt(x float64) float64 {
 }
 
 func main() {
-	fmt.Println(sqrt(4.0))
-	fmt.Println(sqrt(16.0))
+	s := util.ReverseString("go is weird")
+	i := sqrt(16)
+	fmt.Println(s)
+	fmt.Println(i)
 }
